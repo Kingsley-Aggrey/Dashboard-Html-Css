@@ -1,0 +1,137 @@
+/*
+logo-size: 50 x 50
+bg-color: #53C351
+hover-bg-color: #ECFFECBA
+color:  #FFFFFF
+hover-color:#0B7509
+icon-width: 23.06, 18.44, 25.36, 23.06, 21.53
+icon-height:
+font: Poppins
+font-weight: 500, 600
+font-size: 14px, 12px
+ */
+
+:root {
+    --bg-color: #53C351;
+    --hover-bg-color: #ECFFECBA;
+    --white: #FFFFFF;
+    --hover-color: #0B7509;
+    /* icon-width: 23.06, 18.44, 25.36, 23.06, 21.53 */
+    /* font: Poppins */
+    /* font-weight: 500, 600 */
+    --font-size-big: 14px;
+    --font-size-small: 12px
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 15%;
+    background-color: var(--bg-color);
+    color: white;
+    font-size: var(--font-size-big);
+    gap: 10px;
+}
+
+aside .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+aside .logo img {
+    width: 50px;
+    height: 50px;
+}
+
+aside .nav-bar {
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+aside a {
+    text-decoration: none;
+    font-size: var(--font-size-big);
+}
+
+.btn {
+    display: flex;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    color: var(--white);
+    background-color: var(--bg-color);
+    align-items: center;
+    font-weight: 600;
+    text-wrap: nowrap;
+    text-transform: Capitalize;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--hover-bg-color);
+    color: var(--hover-color);
+}
+
+
+.active-btn {
+    background-color: var(--hover-bg-color);
+    color: var(--hover-color);
+}
+
+.btn span {
+    display: flex;
+    width: 32px !important;
+    margin-right: 0.6rem;
+}
+
+.customer-support {
+    font-size: var(--font-size-big);
+    padding: 0.2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.conn-btn {
+    background-color: var(--white);
+    color: var(--bg-color);
+}
+
+.conn-btn h4 {
+    font-size: var(--font-size-big);
+    font-weight: 600;
+}
+
+.conn-btn p {
+    font-size: var(--font-size-small) !important;
+}
+
+.terms {
+    margin: 0 1rem;
+    margin-top: auto;
+}
+
+.terms p {
+    cursor: pointer;
+}
